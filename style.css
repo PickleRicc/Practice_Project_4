@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  transform: translateY(-70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+
+.header--body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-direction: column;
+  /* width: max-content; */
+  margin: 0 auto;
+  position: relative;
+  bottom: 4rem;
+}
+
+.header--title {
+  font-size: 3.3rem;
+  padding-bottom: 1rem;
+  width: 70%;
+  text-align: center;
+
+}
+
+.header--text {
+  font-size: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.button--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.header--button {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+}
+
+/* button box child 1  */
+
+.header--button:first-child {
+  background-color:  #26bba4 ;
+}
+
+/* button box child 2  */
+
+.header--button:last-child {
+  background-color:  #0277e4 ;
+}
+
+
+/* hero section  */
+
+.hero-section {
+  position: relative;
+  bottom: 3rem;
+  max-width: 1200px;
+}
+
+.hero--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.hero--title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero--text {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  width: 45rem;
+  color: grey;
+}
+
+.hero--middle {
+  display: flex;
+}
+
+.column--row {
+  display: flex;
+  gap: 6rem;
+}
+
+.column--row > .img-computer {
+  align-content: flex-start;
+}
+
+.img-computer {
+  width: 650px;
+  margin-top: 1rem;
+}
+
+.row {
+  padding-bottom: 3rem;
+  text-align: left;
+  line-height: 1.5rem;
+  
+}
+
+.row h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: grey;
+}
+
+.row p {
+  font-size: 1rem;
+  color: grey;
+}
+
+.hero--text--right {
+  margin-top: 4.5rem;
+}
+
+/* place hero bottom underneath the hero middle  */
+
+.hero--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  width: 100vh;
+
+}
+
+.hero--bottom p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  width: 45rem;
+  color: grey;
+  line-height: 2rem;
+}
+
+.hero--bottom--images {
+  display: flex;
+}
+
+.hero--bottom--images img {
+  width: 750px;
+  height: auto;
+  margin-left: 12rem;
+}
+
+.company--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.features--row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+  width: 100%;
+}
+
+.ft {
+  text-align: center;
+}
+
+.ft p {
+  font-size: 1rem;
+  color: grey;
+  padding-top: 1rem;
+  line-height: 1.6rem;
+}
+
+.ft img {
+  padding-bottom: 2rem;
+}
+
+.ft h3 {
+  font-size: 1.5rem;
+}
+
+.footer--body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0;
+  flex-direction: column;
+  /* width: max-content; */
+  margin: 0 auto;
+  position: relative;
+  bottom: 4rem;
+}
+
+.footer--body p {
+  font-size: 1rem;
+  text-align: center;
+  padding:0;
+  width: 45rem;
+  color: grey;
+  line-height: 2rem;
+}
+
+.footer--body h1{
+  font-size: 2rem;
+}
+
+.footer--body .button--box{
+  padding-top: 2.5rem;
+}
+
+footer {
+  display: grid;
+  background-color: #f5f5f5;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.logo--image {
+  height: 3rem;
+}
+
+.footermenu {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.footermenu a {
+  color: #333;
+}
+
+.socialmedia {
+  grid-column: 5 / 6;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia li {
+  margin-bottom: 0.5rem;
+}
+
+.socialmedia img {
+  height: 1.5rem;
+}
+
